@@ -108,7 +108,7 @@ fst.obs <- fst.obs[fst.lis>0]
 boxplot(fst.obs, fst.lis, notch=T)
 ```
 
-![](msrFST_files/figure-markdown_github/unnamed-chunk-5-1.png)
+![](/Users/brcok/Desktop/git/msrFST/~/Desktop/git/msrFST/README_files/figure-markdown_github/unnamed-chunk-5-1.png)
 
 ``` r
 #summarize the simulated

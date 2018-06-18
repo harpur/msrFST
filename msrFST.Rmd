@@ -1,8 +1,14 @@
 ---
 title: "WC Fst from ms"
+date: "`r format(Sys.time(), '%d %B, %Y, %H:%M')`"
+knit: (function(inputFile, encoding) { 
+      rmarkdown::render(inputFile,
+                        encoding=encoding, 
+                        output_file=file.path(dirname(inputFile), '~/Desktop/git/msrFST/', 'README.md')) })
 output:
   md_document:
     variant: markdown_github
+
 ---
 I made use of [Vince Buffalo's msr](https://github.com/vsbuffalo/msr) and added my own function to estimate [Weir & Cockerham’s Fst](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0135368). This is a work-in-progress to estimate Fst between 2 population comparisons from ms and compare it to an observed distribution. 
 
