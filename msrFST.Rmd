@@ -9,6 +9,9 @@ I made use of [Vince Buffalo's msr](https://github.com/vsbuffalo/msr) and added 
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+rmarkdown::github_document
+
+
 ```
 
 ### Make an ms run
