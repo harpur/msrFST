@@ -122,14 +122,14 @@ $(document).ready(function () {
 </div>
 
 
+<p>I made use of <a href="https://github.com/vsbuffalo/msr">Vince Buffalo’s msr</a> and added my own function to estimate <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0135368">Weir &amp; Cockerham’s Fst</a>. This is a work-in-progress to estimate Fst between 2 population comparisons from ms and compare it to an observed distribution.</p>
 <div id="make-an-ms-run" class="section level3">
 <h3>Make an ms run</h3>
-<p>This can be done through Vince’s ms() option (see below) or through stand-alone. Here, I’ve run the example below. This begins with 1 population that splits into 3 independant populations in 2 generations (2 pops with 100 and 1 with 635). The split is maintained for 3 generations. It outputs 2000 regions that are 100000 bp for 84 diploid samples.</p>
+<p>This can be done through Vince’s ms() option (see below) or through stand-alone. Here, I’ve run the example below. This begins with 1 population that splits into 3 independant populations in 2 generations (2 pops with 100 and 1 with 635). The split is maintained for 3 generations. It outputs 2000 regions that are 100000 bp for 84 diploid samples and assumes a recombination rate of r = 22cm/Mb.</p>
 <pre class="sh"><code>#./ms 84 2000 -t .254 -I 3 24 32 28 -n 2 0.16 -n 3 0.16 -ej 0.0012 2 1 -ej 0.0012 3 1 -r 56 100000 &gt; testout100r2pops</code></pre>
 </div>
 <div id="load-libraries" class="section level3">
 <h3>Load libraries</h3>
-<p>I need <a href="https://github.com/vsbuffalo/msr">Vince Buffalo’s msr</a> and my little add-on function to estimate <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0135368">Weir &amp; Cockerham’s Fst</a></p>
 </div>
 <div id="build-and-install-msrfst" class="section level3">
 <h3>Build and install msrFST</h3>
